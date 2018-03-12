@@ -1,0 +1,174 @@
+/*CSS-fil til prosjekt info134 
+Skrevet av 100, 128, 170 */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 700px) 
+  and (max-device-width: 1060px) 
+ { 
+ 	/* Header */
+
+	#header{
+		width: 100%;
+	}
+	.header_headline{
+		font-size: 15px;
+		margin-top: 5px;
+		margin-left: 50px;
+		padding: 0;
+		text-align: center;
+	}
+	.search{
+		width: 50px;
+	}
+	.search_text{
+		width: 50px;
+	}
+
+
+	/* Body */
+	body{
+		padding-bottom: 40px;
+	}
+	.body_frontpage{
+	background: gray;
+	padding-bottom: 0;
+	}
+
+	.frontpage_genre{
+		text-align: center;
+	}
+
+	.movie_titles{
+		font-size: 20px;
+		width: 90%;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 0px;
+	}
+
+	#movie_table{
+	display:inline-block;
+	margin-bottom: 25%;
+	}
+	#otitle{
+		margin-top: 10%;
+		padding-top: 10%;
+	}
+
+	.thumbnails_frontpage{
+	height: 300px;
+	width: 210px;
+	border:2px solid #EAC67A;
+	transition: 0.3s;
+	box-shadow: 10px 10px 20px  black;
+
+	}
+	.thumbnails_movie{
+	height: 300px;
+	width: 210px;
+	border:2px solid #EAC67A;
+	transition: 0.3s;
+	box-shadow: 10px 10px 20px  black;
+
+	}
+
+	.thumbnails_frontpage:hover{
+	cursor: pointer;
+	height: 310px;
+	width: 220px;
+
+	}
+
+	#page_content{
+		width: 100%;
+		margin: 0;
+		height: 3500px;
+	}
+
+	.body_wrapper{
+		height: 100%;
+		width: 100%;
+	}
+
+	#mySidenav{
+	margin-top: 9%;
+	}
+	.sidenav {
+	    height: 89%; /* 100% Full-height */
+	    width: 0; /* 0 width - change this with JavaScript */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* 90ay on top */
+	    top: 0;
+	    left: 0;
+	    background-color: #18121E; /* Black*/
+	    overflow-x: hidden; /* Disable horizontal scroll */
+	    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	   	box-shadow: 0px 10px 20px black;
+	   	border-radius: 5px;
+	}
+
+	.sidenav .closebtn {
+	    position: absolute;
+	    top: 0;
+	    right: 25px;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+	/*Linkene i sidemenyen */
+	.sidenav a {
+	    padding: 8px 8px 8px 32px;
+	    text-decoration: none;
+	    font-family: "Custom";
+	    font-size: 25px;
+	    color: #EAC67A;
+	    display: block;
+	    transition: 0.3s
+	}
+
+
+	.sidenav a:hover, .offcanvas a:focus{
+	    color: #f1f1f1;
+	}
+	.sidenav a:visited{
+		color: #EAC67A;
+	}
+
+	#page_content_all_movies{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.footer{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1%;
+	text-align: center;
+	background-color: #18121E;
+	width: 100%;
+	padding-bottom: 15px;
+	}
+
+	.headline_index {
+		margin-top: 0;
+	}
+	.header_headline{
+		font-size: 20px;
+		margin-left: 0px;
+	}
+
+	#header_index{
+	display: flex;
+	justify-content: space-between;
+	background-color: #18121E;
+	position: fixed;
+	width: 100%;
+	height: 11%;
+	top:0;
+	z-index: 1;
+	box-shadow: 0px 5px 20px  black;
+	font-family: "Custom";
+	}

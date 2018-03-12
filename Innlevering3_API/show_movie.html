@@ -1,0 +1,123 @@
+<!-- Skrevet av 100, 128, 170 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="style/stylesheet.css"/>
+	<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone6.css"/> 
+	<link type = "text/css" rel = "stylesheet" href = "style/portrait_ipad.css"/> 
+	<link type = "text/css" rel = "stylesheet" href = "style/stylesheet_mediumscreen.css"/> 
+	<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone5.css"/> 
+    <script type="text/javascript" src="script/genres.js"></script>
+    <script type="text/javascript" src="script/reviews.js"></script>
+    <script type="text/javascript" src="script/query_params.js"></script>
+    <script type = "text/javascript" src="script/reviews.js"></script>
+    <script type="text/javascript" src="script/show_movie.js"></script>
+    <script type = "text/javascript" src = "script/utilities.js"></script>
+	<link rel="icon" href="bilder/popcorn.jpeg">
+	<title>Film</title>
+</head>
+
+<!-- Body med gradient bakgrunn-->
+<body>
+		<!-- Header -->
+			<header id="header_index">
+				<div id = "menu">
+					<img class= "header_icon" onclick="toggleMenu()" src = "bilder/menu_icon.png" alt="menu">
+				</div>
+				<div>
+					<div class ="header_headline">
+						<a href = "index.html" class = "home_header" style ="display: inline-block; margin-bottom: 0;">
+							
+								C   .    F   .   M   .   D
+						</a>		
+						<h2 class = "sub_headline">Code Factory Movie Database</h2>
+					</div>
+				</div>
+				<div>
+					<a href = "index.html"><img class= "header_icon" src = "bilder/home_icon.png" alt="header icon"></a>
+				</div>
+			</header>
+			<!--Sidebar-->
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <br><br>
+
+			  <form id="search" action="search_results.html" method="get">
+							<div>
+								<label for="film_title" style = "color: #EAC67A;">Film tittel</label><br>
+								<input id="film_title" name="film_title" type="text" placeholder="e.g. King Kong" >
+								<input type="submit" id="submit_search" value="Søk">
+							</div>
+					</form>
+			  <a href="index.html">Hjem</a>
+			  <a href="all_movies.html">Alle Filmer</a>
+			  <a href="wishlist.html">Onskeliste</a>
+			  <a href="laanerutiner.html">Laanerutiner</a>
+			  <a href="advanced_search.html">Avansert Sok</a>
+			  <a href="history.html">Historikk</a>
+			</div>
+
+
+
+	<!-- Body wrapper-->
+
+	<div class="body_wrapper">
+		<div id = "page_content">
+			<h1 id = "otitle"></h1>
+			<div class = "sexy_line_movies"></div>
+			
+			<!-- Innhold på filmsiden-->
+			<div class="movie_page">
+				<img id = "thumbnail_movie" alt="thumbnail">
+				<div id ="movie_table">
+					<table id = "movie_info"></table>
+				</div>
+				<!-- Navigasjon for gjeldene film -->
+				<div id = "movie_tabs">
+					<span class="tab" id ="desc_tab" onclick="togglePanels('description')">Beskrivelse</span>
+					<span style = "color: #EAC67A; font-size: 20px;"> | </span>
+					<span class="tab" id="rev_tab" onclick="togglePanels('review')">Annmeldelser</span>
+					<span style = "color: #EAC67A; font-size: 20px;"> | </span>
+					<span class="tab" id="trailer_tab" onclick="togglePanels('trailer')">Trailer</span>
+					<span style = "color: #EAC67A; font-size: 20px;"> | </span>
+					<span class="tab" id="feedback_tab" onclick="togglePanels('feedback')">Gi Tilbakemelding</span>
+					<div class ="sexy_line_movies"></div>
+				</div>
+				<!--Aktiv-->
+				<div id = "current_tab"></div>
+				<!--Inaktiv-->
+				<div id = "temp_tab">
+					<div id = "feedback">
+						<h3>Gi tilbakemelding</h3>
+						<textarea id="commentText" name="comment" rows="5" cols="40"></textarea><br>
+						<select>
+							<option value="0">0 (Veldig dårlig)</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Veldig bra)</option>
+						</select>
+						<button>Send inn</button>
+
+					</div>
+					<!-- Ulike sider -->
+					<div id = "trailer"></div>
+					<p id = "description"></p>
+					<p id = "review"></p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class = "footer">
+			<h2 class = "sub_headline"> All rights reserved 100, 128, 170</h2>
+	</footer>
+
+</body>
+
+</html>

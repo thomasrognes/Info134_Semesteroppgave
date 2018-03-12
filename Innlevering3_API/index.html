@@ -1,0 +1,99 @@
+<!-- Skrevet av 100, 128, 170 -->
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link type="text/css" rel="stylesheet" href="style/stylesheet.css"/>
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone5.css"/>
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone6.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_ipad.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/stylesheet_mediumscreen.css"/> 
+			<script src="script/profile.js"></script>
+			<script src="script/index.js"></script>
+			<script type = "text/javascript" src = "script/utilities.js"></script>
+			<script type = "text/javascript" src = "script/APIobject.js"></script>
+			<link rel="icon" href="bilder/popcorn.jpeg">
+			<title>Hjem</title>
+		</head>
+		<body onload="setup_frontpage(), load_content()">	
+		<!-- Header -->
+			<header id="header_index">
+				<div id = "menu">
+					<img class= "header_icon" onclick="toggleMenu()" src = "bilder/menu_icon.png" alt="menu">
+				</div>
+					<div class ="header_headline">
+						<a href = "index.html" class = "home_header" style ="display: inline-block; margin-bottom: 0;">
+							
+								C   .    F   .   M   .   D
+						</a>		
+						<h2 class = "sub_headline">Code Factory Movie Database</h2>
+					</div>
+				<div>
+					<a href = "index.html"><img class= "header_icon" src = "bilder/home_icon.png" alt="header icon"></a>
+				</div>
+			</header>
+
+			<!--Sidebar-->
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <br><br>
+
+			  <form id="search" action="search_results.html" method="get">
+							<div>
+								<label for="film_title" style = "color: #EAC67A;">Film tittel</label><br>
+								<input id="film_title" name="film_title" type="text" placeholder="e.g. King Kong" >
+								<input type="submit" id="submit_search" value="Søk">
+							</div>
+					</form>
+			  <a href="index.html">Hjem</a>
+			  <a href="all_movies.html">Alle Filmer</a>
+			  <a href="wishlist.html">Onskeliste</a>
+			  <a href="laanerutiner.html">Laanerutiner</a>
+			  <a href="advanced_search.html">Avansert Sok</a>
+			  <a href="history.html">Historikk</a>
+			  <a href="..\index.html">Versjon uten API</a>
+
+			  <hr>
+				<h2 style = "color: #EAC67A">Bruker</h2>
+				<span style = "color: #EAC67A">Username: </span><span id="username" style = "color: #EAC67A">Username</span><br>
+				<p style = "color: #EAC67A">Mine lån: </p><br>
+				<ul id="mine_lån" style = "color: #EAC67A">
+				</ul>
+				<span>Min liste:</span>
+				<ul id="min_liste" style = "color: #EAC67A">
+				</ul>
+
+					<hr>
+
+			</div>
+			
+
+
+			<!-- Body wrapper -->
+			<div class ="body_wrapper">
+				<div id = "page_content">
+				<h1 class="headline_index">Filmer</h1>
+					<!-- Nye filmer -->
+					<section class = "movie_section">
+						<h2 class = "frontpage_genre">Nytt paa CFMD</h2>
+						<div class = "sexy_line"></div>
+						<div id = "newest"></div>
+					</section>		
+
+					<br>
+					<!-- Anbefalinger -->
+					<section class = "movie_section">
+						<h2 class = "frontpage_genre">Anbefalt</h2>
+						<div class = "sexy_line"></div>
+						<div id = "recommended"></div>	
+					</section>	
+				</div>
+			</div>
+		
+		<footer class = "footer">
+			<h2 class = "sub_headline"> All rights reserved 100, 128, 170</h2>
+		</footer>
+		</body>
+	</html>

@@ -1,0 +1,75 @@
+<!-- Skrevet av 100, 128, 170 -->
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link type="text/css" rel="stylesheet" href="style/stylesheet.css"/>
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone6.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_ipad.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/stylesheet_mediumscreen.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone5.css"/> 
+			<script type = "text/javascript" src = "script/utilities.js"></script>
+			<script type="text/javascript" src= "script/all_movies.js"></script>
+			<link rel="icon" href="bilder/popcorn.jpeg">
+			<title>Alle Filmer</title>
+		</head>
+		<body>	
+		<!-- Header -->
+			<header id="header_index">
+				<div id = "menu">
+					<img class= "header_icon" onclick="toggleMenu()" src = "bilder/menu_icon.png" alt="menu">
+				</div>
+				<div>
+					<div class ="header_headline">
+						<h1 class = "home_header" style ="display: inline-block; margin-bottom: 0;">
+							
+								C   .    F   .   M   .   D
+						</h1>		
+						<h2 class = "sub_headline">Code Factory Movie Database</h2>
+					</div>
+				</div>
+				<div>
+					<a href = "index.html"><img class= "header_icon" src = "bilder/home_icon.png" alt="header icon"></a>
+				</div>
+			</header>
+
+			<!--Sidebar-->
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <br><br>
+
+			  <form id="search" action="search_results.html" method="get">
+							<div>
+								<label for="film_title" style = "color: #EAC67A;">Film tittel</label><br>
+								<input id="film_title" name="film_title" type="text" placeholder="e.g. King Kong" >
+								<input type="submit" id="submit_search" value="Søk">
+							</div>
+					</form>
+			  <a href="index.html">Hjem</a>
+			  <a href="all_movies.html">Alle Filmer</a>
+			  <a href="wishlist.html">Onskeliste</a>
+			  <a href="laanerutiner.html">Laanerutiner</a>
+			  <a href="advanced_search.html">Avansert Sok</a>
+			  <a href="history.html">Historikk</a>
+			</div>
+			<!-- Body wrapper -->
+			<div class ="body_wrapper">
+				<div id = "page_content_all_movies">
+					<h1 class = "headline_index">Alle filmer</h1>
+					<div class = "sexy_line_movies"></div>
+			    	<!-- Liste over alle filmer i arkivet-->
+			    	<div id="list">
+			    		<ol id="all_movies"></ol>
+    				</div>
+				
+				</div>
+			</div>
+
+			<footer class = "footer">
+				<h2 class = "sub_headline"> All rights reserved 100, 128, 170</h2>
+			</footer>
+
+		</body>
+	</html>

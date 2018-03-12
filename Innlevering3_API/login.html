@@ -1,0 +1,76 @@
+<!-- Skrevet av 100, 128, 170 -->
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link type="text/css" rel="stylesheet" href="style/stylesheet.css"/>
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone6.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_ipad.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/stylesheet_mediumscreen.css"/> 
+			<link type = "text/css" rel = "stylesheet" href = "style/portrait_iphone5.css"/> 
+			<script src="script/myscript.js"></script>
+			<script type = "text/javascript" src = "script/utilities.js"></script>
+			<link rel="icon" href="bilder/popcorn.jpeg">
+			<title>Logg inn</title>
+		</head>
+		<body>
+
+			<header id="header_index">
+				<form id="search" action="search_results.html" method="get">
+					<fieldset>
+						<legend>Søk</legend>
+						<div>
+							<label for="film_title" style = "color: white">Film tittel</label>
+							<input id="film_title" name="film_title" type="text" placeholder="e.g. King Kong" >
+							<label for="actor" style = "color: white" >Skuespiller</label>
+							<input id="actor" name="actor" type="text" placeholder="e.g. Tom Cruise" >
+							<label for="country" style = "color: white">Land</label>
+							<input id="country" name="country" type="text" placeholder="eks. 'Nor','Eng','Swe' etc" >
+						
+
+						</div>
+					</fieldset>
+					<input type="submit" id="submit_search" value="Søk">
+				</form>
+				<div class ="header_headline">
+					<h1 style ="display: inline-block; margin-bottom: 0;">
+						<a class = "home_header" href="index.html">
+							C   .    F   .   M   .   D
+						</a>
+					</h1>		
+					<h2 class = "sub_headlines">Code Factory Movie Database</h2>
+				</div>
+				<div class = "load_login_button">
+					<button onclick="loadLoginPage()">Logg inn!</button>
+				</div>
+			</header>
+
+
+			<h1 class="headlines">Logg inn!</h1>
+			<div id = "sexy_line"></div>
+
+			
+			<form class = "login">
+				Logg inn:<br>
+				<input type="text" id="username" placeholder="Brukernavn (admin)" required><br>
+				<input type="text" id="password" placeholder="Passord (admin)" required><br>
+				<input type="submit" onclick="login()">
+			</form>
+			
+
+
+
+
+
+
+
+
+
+		<footer class = "footer">
+			<h2 class = "sub_headlines"> All rights reserved gux006, rut005, tkv015</h2>
+		</footer>
+
+		</body>
+	</html>

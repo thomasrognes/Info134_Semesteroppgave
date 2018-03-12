@@ -1,0 +1,496 @@
+/* Skrevet av 100, 128, 170 */
+
+/* The side navigation menu */
+#mySidenav{
+	margin-top: 4.5%;
+}
+.sidenav {
+    height: 89%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* 90ay on top */
+    top: 0;
+    left: 0;
+    background-color: #18121E; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+   	box-shadow: 0px 10px 20px black;
+   	border-radius: 5px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/*Linkene i sidemenyen */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: "Custom";
+    font-size: 25px;
+    color: #EAC67A;
+    display: block;
+    transition: 0.3s
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav a:visited{
+	color: #EAC67A;
+}
+
+/* body diven til startsiden */
+.body_wrapper{
+	background-color: #984B43;
+	width: 100%;
+	height: 2000px;
+}
+
+
+/* filmtittel på startside. */
+.movie_titles{
+	font-family: "Custom";
+	color: #EAC67A;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-right: 15px;
+}
+
+/* bildene på startsiden og filmsider */ 
+
+.thumbnails_frontpage{
+	height: 300px;
+	width: 210px;
+	border:2px solid #EAC67A;
+	transition: 0.3s;
+	box-shadow: 10px 10px 20px  black;
+
+}
+.thumbnails_frontpage:hover{
+	cursor: pointer;
+	height: 310px;
+	width: 220px;
+
+}
+#thumbnail_movie{
+	height: 440px;
+	margin-bottom: 50px;
+	width: 330px;
+	border: 2px solid #EAC67A;
+	box-shadow: 10px 10px 20px  black;
+}
+/* bilder på startsiden og filmsider slutt */
+
+/* Overskrift alle filmsider. */
+#otitle{
+	font-size: 50px;
+	margin:0;
+	text-align: center;
+	padding-top: 5%;
+	color: #EAC67A;
+	font-family: "Custom";
+}
+
+/* footer tekst */
+.sub_headline{
+	font-size: 12px;
+	color: #EAC67A;
+	margin: 0;
+	margin-top: 0;
+}
+
+/* Logo i header */
+.header_headline{
+	text-decoration: none;
+	color: #EAC67A;	
+	font-family: "Custom";
+}
+
+/* link til forsiden slutt. */
+
+#submit_search{
+	margin-left: 20px;
+}
+
+
+
+/* footer filmsider */
+.footer{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 2%;
+	text-align: center;
+	background-color: #18121E;
+	width: 100%;
+}
+
+
+
+
+.movie_page{
+	text-align: center;
+}
+/* tabell på filmsider */
+#movie_info{
+	text-align: center;
+	color: #EAC67A;
+	font-size: 15px;
+	font-family: "Custom";
+	height: auto;
+	width: 0;
+}
+#movie_info a{
+	color: #EAC67A;
+	text-decoration: none;
+}
+#movie_info a:hover{
+	color: #EAC67A;
+	text-decoration: underline;
+}
+/* rating på filmsider */
+.rating{
+	width: 80%;
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid #EAC67A;
+	text-align: center;
+	background: #a6a6a6;
+	margin-left: 10%;
+}
+
+
+/* trailer på filmsider */
+.trailer{
+	margin-left: -10px;
+	border: 1px solid orange;
+}
+
+/* Overskrift startside */
+.headline_index{
+	font-size: 50px;
+	padding-top: 5%;
+	text-align: center;
+	color: #EAC67A;
+	font-family: "Custom";
+}
+
+/* de forskjellige kategoriene på forsiden */
+.frontpage_genre{
+	font-family: "Custom";
+	font-size: 30px;
+	padding-left: 5%;
+	color: #EAC67A;
+}
+
+
+.link_text{
+	font-size: 20px;
+	color: #EAC67A;
+	text-decoration: none;
+}
+.login{
+	padding-top: 40px;
+}
+
+
+#search{
+	background-color: #18121E;
+	color: #EAC67A;
+}
+#page_content{;
+	background-color: #233237;
+	height: 100%;
+	z-index: 1;
+	width: 70%;
+	margin-left: 15%;
+	box-shadow: 0px 5px 20px  black;
+	transition: 0.5s;
+
+}
+#page_content_all_movies{;
+	background-color: #233237;
+	height: 3580%;
+	width: 80%;
+	margin-left: 10%;
+	box-shadow: 0px 5px 20px  black;
+	transition: 0.5s;
+
+}
+.load_login_button{
+	margin-top: 55px;
+	margin-right: 5px;
+}
+
+
+
+/* header til filmsidene */
+.movie_header{
+	font-size: 1.75rem;
+	font-family: "Custom";
+}
+
+
+
+body{
+	background-color: #984B43;
+	margin:0;
+	margin-top: 80px;
+	min-height: 100%;
+	padding-bottom: 40px;
+	
+}
+
+
+/* linker skuespillere slutt */
+
+table {
+    border-spacing: 10px 10px;
+}
+#all_movies{
+	margin-left: 15%;
+	font-size: 20px;
+	color: #EAC67A;
+}
+#all_movies a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "Custom";
+	color: #EAC67A;
+}
+#all_movies a:hover{
+	text-decoration: underline;
+}
+
+iframe {
+	margin-left: 2rem;
+}
+
+#description{
+	visibility: hidden;
+	margin-top: 0;
+	display: inline-block;
+	width: 60%;
+	margin-left: 5%;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: "Custom";
+	color:#EAC67A;
+	box-shadow: 0px 5px 20px  black;
+	padding: 5px;
+	line-height: 130%;
+}
+#summary_button{
+	margin-top: 1%;
+}
+	
+.movie_section{
+	height: 900px;
+	border-radius: 25px;
+	width: 90%;
+	margin-left: 5%;
+}
+.movies{	
+	float:left; 
+	display:inline;
+	height: 320px;
+	width: 230px;
+	margin-bottom: 80px;
+}
+#newest{
+	float:left; 
+	height: auto;
+	width: 100%;
+	padding-left: 3%;
+}
+#recommended{
+	float:left; 
+	height: auto;
+	width: 100%;
+	margin-bottom: 80px;
+	padding-left: 3%;
+}
+
+/* header startside */
+#header_index{
+	display: flex;
+	justify-content: space-between;
+	background-color: #18121E;
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	top:0;
+	z-index: 1;
+	box-shadow: 0px 5px 20px  black;
+	font-family: "Custom";
+}
+.header_icon{
+	transition: 0.3s;
+	width: 60px; 
+	height: 60px; 
+	padding: 20px;
+}
+.header_icon:hover{
+	width: 65px;
+	height: 65px;
+	cursor: pointer;
+}
+
+/* understrek på overskrifter */
+.sexy_line{
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#233237), to(#233237), color-stop(5%, #EAC67A));
+}
+
+.sexy_line_movies{
+	margin-top: 0;
+	margin-bottom: 20px;
+    height: 1px;
+    width: 70%;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#233237), to(#233237), color-stop(50%, #EAC67A));
+    margin-left: 15%;
+}
+.sexy_line_comments{
+	margin-top: 0;
+	margin-bottom: 20px;
+    height: 1px;
+    width: 70%;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#233237), to(#233237), color-stop(50%, #EAC67A));
+    margin-left: 15%;
+}
+.home_header{
+	display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #EAC67A;
+    text-decoration: none;
+
+}
+
+
+
+/* font til alle sider */
+@font-face{
+	font-family: "Custom";
+	src:url(../fonts/raleway_thin-webfont.ttf);
+}
+
+
+
+/*
+	Bilde slideshow
+*/
+.body_bilder{
+	margin-top: 100px;
+}
+
+#main_picture{
+	width: 100%;
+}
+
+.gradient{
+	background-color: #984B43;
+	height: 2000px;
+}
+.body_laanerutiner{
+	background-color: #233237;
+	height: 1000px;
+	width: 80%;
+	margin-left: 10%;
+	box-shadow: 0px 5px 20px  black;
+}
+#wishlist_form form{
+	text-align: center;
+}
+#wishlist_form form label{
+	color: #EAC67A;
+}
+#wishlist_form #knapp{
+	margin-left: 5%;
+}
+#reminderList{
+	margin-left: 30%;
+}
+#reminderList li{
+	color: #EAC67A;
+	font-size: 20px;
+}
+#res_list a{
+	text-decoration: none;
+	color: #EAC67A;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#res_list a:hover{
+	color: #EAC67A;
+	text-decoration: underline;	
+}
+#advanced_search{
+	width: 80%;
+	margin-left: 9%;
+} 
+.rutiner{
+	color: #EAC67A;
+	font-family: "Custom";
+	font-size: 20px;
+	margin-left: 20%;
+}
+#review{
+	visibility: hidden;
+	margin-left: 40%;
+	font-family: "Custom";
+	width: 24%;
+	color: #EAC67A;
+	box-shadow: 0px 5px 20px  black;
+}
+.tab{
+	font-family: "Custom";
+	color:#EAC67A;
+	font-size: 20px;
+}
+.tab:hover{
+	cursor: pointer;
+}
+#current_tab{
+	height: auto;
+	width: 0;
+	transition: width 0.5s;
+}
+#trailer{
+	visibility: hidden;
+}
+#trailer p{
+	width: 20%;
+	margin-left: 43%;
+	box-shadow: 0px 5px 20px  black;
+	color: #EAC67A;
+	font-family: "Custom";
+}
+
+#movie_table{
+	display:inline-block;
+	margin-bottom: 10%;
+
+}
+#feedback h3{
+	color: #EAC67A;
+	font-family: "Custom";
+}
+#history{
+	margin-left: 7.5%;
+	height: 100%;
+}
